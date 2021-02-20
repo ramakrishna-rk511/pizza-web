@@ -1,0 +1,157 @@
+<div class="container-fluid bg_clr3 fs12 fc4 fb">
+	<div class="container">
+		<div class="row pd5">
+			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+				<p class=" mg0">
+					<span class="pdr20"><i class="fa fa-facebook-official" aria-hidden="true"></i></span>
+					<span class="pdr20"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+					<span class="pdr20"><i class="fa fa-pinterest-p" aria-hidden="true"></i></span>
+					<span class="pdr20"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+					<span>Welcome to the Farmers Best Organic - An Organic Super Market</span>
+				</p>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+				<p class="mg0 text-right">
+					<span class="fc5 pdr20"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+					<span class="pdr20">farmersbest@gmail.com</span>
+					<span class="fc5 pdr20"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+					<span>mon - sat 8:00 - 6:30</span>
+				</p>
+			</div>
+		</div>	
+	</div>
+</div>
+<div class="container-fluid border_img" id="navbar_top">
+	<div class="container">
+		<div class="row pdt20 pdb20" >
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<div>
+					<img src="web/img/logo2.png" width="100%" class="img-responsive" alt="Logo" />
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<nav class="navbar header_nav mg0">
+					<ul class="nav navbar-nav">
+	  					<li><a href="#home" class="fc4 fb fs12">Home</a></li>
+	  					<li><a href="listPage.html" class="fc4 fb fs12">ListPage</a></li>
+	  					<li><a href="#whyfarmers" class="fc4 fb fs12">Why Farmer's Best</a></li>
+	  					<li><a href="#ourproducts" class="fc4 fb fs12">Our Products</a></li>
+	  					<!-- <li><a href="#ourstores" class="fc4 fb">Our Stores</a></li> -->
+	  					<!-- <li><a href="#" class="fc2 fb">Contact Us</a></li> -->
+					</ul>  
+				</nav>
+			</div>
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+				<div class="search_icon mgl40" id="show_div1"></div>
+			</div>
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+				<div class="cart_icon" id="show_div"></div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<div class="row bg_clr1 pd10 fc1 br_rd1">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd0">
+						<i class="fa fa-volume-control-phone fs35" aria-hidden="true" style="transform: rotate(-20deg);"></i>
+					</div>
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pd0">
+						<p class="mg0 fb fs12 pdl10">Call Anytime</p>
+						<p class="mg0 fb fs12 pdl10">+91 9966 097 097</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid cart_div">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			Cart page
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	if ($(window).width() > 992) {
+  $(window).scroll(function(){  
+     if ($(this).scrollTop() > 27) {
+        $('#navbar_top').addClass("fixed-top border_img1");
+        // add padding top to show content behind navbar
+        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+      }else{
+        $('#navbar_top').removeClass("fixed-top border_img1");
+         // remove padding top from body
+        $('body').css('padding-top', '0');
+      }   
+  });
+}
+
+
+$(document).ready(function(){
+  $("#show_div1").click(function(){
+    $(".cart_div").hide();
+  });
+  $("#show_div").click(function(){
+    $(".cart_div").show();
+  });
+});
+
+</script>
+
+<style type="text/css">
+	.fixed-top{
+		position: fixed;
+	    top: 0px;
+	    width: 100%;
+	    background-color: #ffffff;
+	    z-index: 99;
+	    border-bottom: 1px solid #dcdcdc;
+	}
+	.search_icon{
+	    width: 50px;
+		height: 50px;
+		background-image: url(web/img/bg_img_icon.png);
+		background-position: 4px 6px;
+		background-size: 400%;
+	
+	}
+	.cart_icon{
+		width: 50px;
+		height: 50px;
+		background-image: url(web/img/bg_img_icon.png);
+		background-position: -45px 6px;
+    	background-size: 400%;
+	}
+	.search_icon:hover{
+		background-position: 4px -43px;
+	}
+	.cart_icon:hover{
+		background-position: -45px -43px;
+	}
+	.border_img::after{
+	    z-index: 99999999;
+	    content: "";
+	    background-image: url(web/img/border1.png);
+	    position: absolute;
+	    bottom: 0px;
+	    width: 100%;
+	    top: 120px;
+	    left: 0px;
+	    height: 20px;
+	    background-repeat: no-repeat;
+	}
+	.border_img1::after{
+		top: 94px !important;
+	}
+	.cart_div{
+		position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    background: red;
+	    width: 25%;
+	    height: 100%;
+	    z-index: 999999999;
+	    display: none;
+	}
+</style>
