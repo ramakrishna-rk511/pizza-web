@@ -1,6 +1,8 @@
 body{
 	/*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'Akaya Kanadaka', cursive;*/
+    font-family: 'Livvic', sans-serif;
 }
 .container{
 	width: 90%;
@@ -29,6 +31,15 @@ body{
 .bg_clr7{
   background-color: #497953;
 }
+.bg_clr8{
+  background-color: #ffffff2b;
+}
+.bg_clr9{
+  background-color: #225c2e;
+}
+.bg_clr10{
+  background-color: #bdbdbd;
+}
 
 /*FONT COLOR*/
 .fc1{
@@ -49,7 +60,12 @@ body{
 .fc6{
   color: #555555;
 }
-
+.fc7{
+  color: #cecece;
+}
+.fc8{
+  color: #225c2e;
+}
 
 
 /*FONT SIZE*/
@@ -69,9 +85,23 @@ body{
 .fs22{
 	font-size: 22px;
 }
+.fs25{
+  font-size: 25px;
+}
 .fs35{
 	font-size: 35px !important;
 }
+.fs50{
+  font-size: 50px;
+}
+.fs100{
+  font-size: 100px;
+}
+.fs150{
+  font-size: 150px;
+}
+
+
 
 
 /*FONT_STYLE*/
@@ -114,6 +144,9 @@ body{
 }
 .pd0{
 	padding: 0px;
+}
+.pdt5{
+  padding-top: 5px;
 }
 .pdt20{
   padding-top: 20px;
@@ -162,6 +195,9 @@ body{
 /*width*/
 .w_100{
   width: 100%;
+}
+.h_150{
+  height: 150px;
 }
 
 /*BORDER*/
@@ -266,9 +302,9 @@ body{
     font-weight: bold;
 }
 .header_nav .nav>li>a:focus, .header_nav .nav>li>a:hover{
-	background-color: #ffffff;
-    color: #333333;
-    border-bottom: 2px solid #29ad45;
+	background-color: transparent;
+    color: #555555;
+    /*border-bottom: 2px solid #29ad45;*/
 }
 .about_text{
     letter-spacing: 0.7px;
@@ -277,20 +313,20 @@ body{
 }
 .carousel-indicators .active {
     width: 30px;
-    height: 15px;
+    height: 9px;
     margin: 0;
-    background-color: #29ad45;
+    background-color: #225c2e;
   }
   .carousel-indicators li {
     display: inline-block;
     width: 30px;
-    height: 15px;
+    height: 8px;
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
     background-color: #000\9;
     background-color: rgba(0,0,0,0);
-    border: 3px solid #29ad45;
+    border: 2px solid #225c2e;
     border-radius: 10px;
 }
 
@@ -300,13 +336,51 @@ body{
   width: 11%;
   text-align: center;
   border-right: 1px solid #dcdcdc;
+  padding: 0px;
 }
 .main_cat .navbar-nav>li:nth-child(9){
   border-right:none;
 }
-.main_cat .nav>li>a:focus, .main_cat .nav>li>a:hover{
-  background-color: #1C0E02;
+.main_cat .nav>li>a:hover{
+  background-color: #225c2e;
+  border: none;
   color: #ffffff;
+  cursor: pointer;
+}
+.main_cat .nav>li>a:focus, .main_cat .nav>li>a:hover {
+  background-color: #225c2e;
+  color: #ffffff;
+  border: 1px solid transparent;
+  cursor: pointer;
+  /*content: "";
+  width: 100;
+height: 100;
+border-style: solid;
+border-width: 100px 100px 0 100px;
+border-color: #007bff transparent transparent transparent;*/
+}
+/*.main_cat .navbar-nav .active:before{
+    content: " ";
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    border-color: #225c2e transparent transparent transparent;
+    position: absolute;
+    top: 98%;
+    left: 40%;
+}*/
+
+.main_cat1 .nav>li>a:focus, .main_cat1 .nav>li>a:hover{
+  background-color: transparent;
+  color: #333333;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.main_cat1 .nav>li>a{
+  font-size: 18px;
+}
+.main_cat1 .nav-tabs>li.active>a, .main_cat1 .nav-tabs>li.active>a:focus, .main_cat1 .nav-tabs>li.active>a:hover{
+  border: none;
+  border-bottom: 4px solid #225c2e;
 }
 
 
@@ -462,4 +536,63 @@ body{
 .orders_tabs>li{
   float: left;
   width: 33%;
+}
+.carousel-caption1{
+    top: 30%;
+}
+.carousel-caption2{
+    left: 50%;
+}
+.navbar-nav>li.active>a, .navbar-nav>li.active>a:focus, .navbar-nav>li.active>a:hover{
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buy_btn{
+      padding: 10px;
+    background-color: #225c2e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 35px;
+    margin-top: 35px;
+}
+.buy_btn:hover{
+  color: #ffffff;
+  display: block;
+}
+.item_blk{
+      padding: 50px;
+      height: 600px;
+    /*border: 4px solid #dcdcdc;*/
+}
+.dn{
+  display: none;
+}
+.item_blk:hover{
+  border: 4px solid #dcdcdc;
+  cursor: pointer;  
+}
+.item_blk:hover .buy_btn{
+  display: block;
+}
+.comment_arrow:before{
+  content: " ";
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    border-color: #FCF4EB transparent transparent transparent;
+    position: absolute;
+    top: 38%;
+    left: 45%;
+}
+
+
+.social_icons{
+  padding-left: 0px;
+}
+.social_icons li{
+  display: inline;
+  padding-left: 10px;
 }
